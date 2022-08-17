@@ -13,14 +13,16 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="./styles.css">
+  
 </head>
 <body>
-
+  <script src="./rate-comp.js"></script>
   <!-- Rating state start -->
   <div class="main-container">
-    <div class="rating-container">
-      <div class="star">
-        <img src="" alt="">
+    <div id="rating-container">
+      <div class="rating-star">
+        <img src="/images/icon-star.svg" alt="">
       </div>
       <div class="rating-description">
         <h1>How did we do?</h1>
@@ -28,30 +30,30 @@
         to help us improve our offering!</p>
       </div>    
       <div class="rating-buttons__container">
-        <button class="rating-button">1</button>
-        <button class="rating-button">2</button>
-        <button class="rating-button">3</button>
-        <button class="rating-button">4</button>
-        <button class="rating-button">5</button>
+        <button id="rating-button1" class="rating-button" onclick="rateSelectButtonColor(1)">1</button>
+        <button id="rating-button2" class="rating-button" onclick="rateSelectButtonColor(2)">2</button>
+        <button id="rating-button3" class="rating-button" onclick="rateSelectButtonColor(3)">3</button>
+        <button id="rating-button4" class="rating-button" onclick="rateSelectButtonColor(4)">4</button>
+        <button id="rating-button5" class="rating-button" onclick="rateSelectButtonColor(5)">5</button>
       </div>
-      <button class="submit">SUBMIT</button>
+      <button id="submit" onclick='submitRate()'>SUBMIT</button>
     </div>
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-    <div class="thankU-container">
-      <img src="" alt="" class="thankU-image">
-      <span>You selected</span> <span class="thankU-rate">4</span> <span>out of 5</span> 
+    <div id="thankU-container">
+      <img src="./images/illustration-thank-you.svg" alt="" class="thankU-image">
+      <div class="thankU-rate__mesaje">
+        <span id="thankU-rate">4</span> 
+      </div>
+      
       <h2>Thank you!</h2>
       <p class="thankU-messaje">We appreciate you taking the time to give a rating. If you ever need more support, 
         don’t hesitate to get in touch!</p>
     </div>
     <!-- Thank you state end -->
   </div>
-    
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  
 </body>
 </html>

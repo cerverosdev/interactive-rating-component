@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Medium-blue:#252d37;
+    --Dark-Blue: #1f2630;
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --overpass:'Overpass', sans-serif;
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: var(--overpass);
+    font-size: 62.5%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+}
+/*rating state*/
+.main-container{
+    width: 375px;
+    background-color: var(--Dark-Blue);
+    border-radius: 15px;
+    color: var(--White);    
+}
+#rating-container{
+    margin: 30px;
+    
+}
+.rating-star{
+    width: 44px;
+    height: 44px;
+    background-color: var(--Medium-blue);
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.rating-description h1{
+    font-family: var(--overpass);
+    font-size: 1.6rem;
+}
+.rating-description p{
+    font-family: var(--overpass);
+    font-size: 1rem;
+    color: var(--Light-Grey);
+}
+.rating-buttons__container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.rating-button{
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    background-color: var(--Medium-blue);
+    border: none;
+    color: var(--Light-Grey);
+    font-family: var(--overpass);
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: ease-out 0.3s;
+}
+#rating-button:hover{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+#submit{    
+    margin-top: 30px;    
+    width: 100%;
+    height: 48px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--Orange);
+    font-family: var(--overpass);    
+    color: var(--White);
+    letter-spacing:2px;
+    font-size: 1rem;
+    transition: ease-in 0.3s;
+}
+#submit:hover{
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+/*thank you state*/
+#thankU-container{
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px;    
+    text-align: center;
+}
+.thankU-rate__mesaje{
+    background-color:var(--Medium-blue);
+    height: 20px;
+    border-radius: 15px;
+    padding:4px 10px;
+    margin-top: 30px;
+    color: var(--Orange);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+.thankU-container h2{
+    font-size: 1.4rem;
+}
+.thankU-messaje{
+    color: var(--Light-Grey);
+    font-size: 0.9rem;
+}
+
