@@ -71,7 +71,7 @@ body{
     font-weight: bold;
     transition: ease-out 0.3s;
 }
-#rating-button:hover{
+.rating-button:hover{
     background-color: var(--Light-Grey);
     color: var(--White);
 }
